@@ -1,0 +1,28 @@
+{ 
+	"mver": "1.2.0",
+	"control": {
+		"identity": {
+			"name": "Snake",
+			"version": "1.0",
+			"displayname": "Snake",
+			"icon": "./assets/logo.png",
+			"type": "guid://B7EA02E9-65AE-4BE2-AEC1-38E0BCA35F7F",
+			"start": "./control/index.html"
+		},
+		"metadata": {
+			"author": "Zakotiy E.A.",
+			"email": "evgeniy.zakotij@svghmi.pro",
+			"keywords": [
+				"Snake"
+			]
+		},
+		"contracts": {
+			"api": {
+				"properties": {
+				}
+			}
+		},
+		"types": {
+		}
+	}
+}

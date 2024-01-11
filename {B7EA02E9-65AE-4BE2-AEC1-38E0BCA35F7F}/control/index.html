@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head> 
+	<meta charset='utf-8'>
+	<title>Control 3D object</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+	<script src='./jsm/webcc.min.js'></script>
+
+
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+
+		html,
+		body
+		{
+			height: 100vh;
+			font-family: 'Poppins';
+		}
+
+		.snake
+		{
+			position: fixed;
+			top: 0;
+			left: 0;
+			outline: none;
+			width: auto;
+			height: auto;
+		}
+		/* canvas{
+			display: block;
+			margin: 0 auto;
+		} */
+	</style>
+
+<body>
+    <canvas id="snake" width="608" height="608"></canvas>
+    <script src="snake.js"></script>
+
+	<script type="module">
+		WebCC.start(
+			function (result) {
+				if (result) {
+					console.log('connected successfully');
+				} else {
+					console.log('connection failed');
+				}
+			},
+			{					
+				events: [],
+				properties: {}
+			},
+			[],
+			10000
+		);
+	</script>
+
+</body>
+
+</html>
